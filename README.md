@@ -1,6 +1,7 @@
 ## Sample Flask application using [Flask-RESTPlus](https://flask-restplus.readthedocs.io/en/stable/index.html) , [Flask-Marshmallow](https://flask-marshmallow.readthedocs.io/en/latest/) and [Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/quickstart/)
 
 ## Setting up the VirtualEnv and install dependencies
+
 Go inside the project folder and execute the below commands. We will use [Pipenv](https://pypi.org/project/pipenv/) to setup the VirtualEnv.
 
 ```
@@ -8,6 +9,7 @@ pipenv shell
 pipenv install
 
 ```
+
 Dependencies will be installed from the Pipfile. Python version 3.7 is used for this project.
 
 ## Run the Application
@@ -26,3 +28,18 @@ Swagger-UI can be used to test the application.
 
 The server will start at <http://localhost:5000>.
 
+---
+
+## Docker & CI/CD (DevOps)
+
+This project was containerized using Docker and includes a CI/CD pipeline implemented with GitHub Actions.
+
+### Docker Image
+
+The Flask REST API is packaged as a Docker image.
+
+Build the Docker image locally:
+
+```bash
+docker build -t final-python .
+```
